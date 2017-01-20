@@ -1,0 +1,44 @@
+<BT@Button>:
+    color:1,0,0,1
+    font_size:'18sp'
+#    on_release: label.text = app.loadtobtn1()
+
+<Application>:
+    Label:
+        id:label
+        text: app.loadtobtn1()
+        pos: root.x, root.y+root.height-self.height
+        size:root.width, root.height-((root.height/5)*2)
+        valign:'top'
+        canvas:
+            Color:
+                rgba:0,0,1,0.2
+            BorderImage:
+                pos: self.pos
+                size: self.size
+
+
+    BT:
+        pos: root.x, root.y
+        text: app.btn1()
+        size: root.width/2,root.height/5
+
+
+    BT:
+        pos: root.x, root.y + self.height
+        text: app.btn2()
+        size: root.width/2,root.height/5
+
+
+
+    BT:
+        pos: root.x + self.width, root.y
+        text: app.btn3()
+        size: root.width/2,root.height/5
+
+    BT:
+        pos: root.x + self.width, root.y + self.height
+        text: app.btn4()
+        size: root.width/2,root.height/5
+
+
