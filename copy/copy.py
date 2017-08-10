@@ -1,4 +1,4 @@
-__author__ = 'kud'
+__author__ = 'berserker5000'
 
 import shutil, os, hashlib
 
